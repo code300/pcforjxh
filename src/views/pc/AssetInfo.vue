@@ -87,6 +87,7 @@ export default {
       submitApi: 'https://apponline.jinxianghua.com/501/add',
       host: 'https://spa.jinxianghua.com',
       // host: "https://apply.jinxianghua.com",
+      hostname: '',
       btntext: '申请额度请以系统审核为准',
       loadFlag: false,
       clientName: "",
@@ -119,6 +120,7 @@ export default {
   },
   created() {
     this.host = this.getHost();
+    this.hostname = location.hostname
     this.getSubmitApi()
   },
   mounted() {
@@ -250,7 +252,7 @@ export default {
         // domain: "apply.jinxianghua.com", //公司和专员订单8003测试员工号
         // domain: "spa.jinxianghua.com", //501推广
         //  domain: "spb.jinxianghua.com", //502推广
-        domain: this.host,
+        domain: this.hostname,
         ...values,
         ...this.$route.query,
       };
@@ -320,8 +322,9 @@ export default {
 .AssetInfoPage {
   z-index: 999;
   position: absolute;
-  right: 330px;
+  // right: 330px;
   // left: 1200px;
+  left: 65%;
   top: 140px;
   width: 390px;
   background-color: rgba(0, 0, 0, 0.5);

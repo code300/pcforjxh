@@ -64,6 +64,7 @@ export default {
       submitApi: 'https://apponline.jinxianghua.com/501/add',
       host: 'https://spa.jinxianghua.com',
       // host: "https://apply.jinxianghua.com",
+      hostname: '',
       loadFlag: false,
       clientName: "",
       sex: "1",
@@ -141,6 +142,7 @@ export default {
   },
   created() {
     this.host = this.getHost();
+    this.hostname = location.hostname
     this.getSubmitApi()
   },
   methods: {

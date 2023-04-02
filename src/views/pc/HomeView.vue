@@ -83,7 +83,7 @@
           <div class="title">
             <p class="title1">有房就能贷</p>
             <p class="title2">期限长达30年，额度高至1000万</p>
-            <a href="" target="_black">立即咨询</a>
+            <a>立即咨询</a>
           </div>
         </li>
         <li class="fl mr75">
@@ -93,7 +93,7 @@
           <div class="title">
             <p class="title1">有车就能贷</p>
             <p class="title2">不押车，不装gps</p>
-            <a href="" target="_black">立即咨询</a>
+            <a>立即咨询</a>
           </div>
         </li>
         <li class="fl">
@@ -103,7 +103,7 @@
           <div class="title">
             <p class="title1">有保单就能贷，保单变宝单</p>
             <p class="title2">手续简单，当天放款</p>
-            <a href="" target="_black">立即咨询</a>
+            <a>立即咨询</a>
           </div>
         </li>
       </ul>
@@ -115,7 +115,7 @@
           <div class="title">
             <p class="title1">连续半年无断缴就能贷</p>
             <p class="title2">无抵押，无担保，办理快捷</p>
-            <a href="" target="_black">立即咨询</a>
+            <a>立即咨询</a>
           </div>
         </li>
         <li class="fl mr75">
@@ -125,7 +125,7 @@
           <div class="title">
             <p class="title1">工资月入3000</p>
             <p class="title2">门槛低，手续简单</p>
-            <a href="" target="_black">立即咨询</a>
+            <a>立即咨询</a>
           </div>
         </li>
         <li class="fl">
@@ -135,16 +135,17 @@
           <div class="title">
             <p class="title1">有营业执照就能贷</p>
             <p class="title2">还款方式灵活，随借随还</p>
-            <a href="" target="_black">立即咨询</a>
+            <a>立即咨询</a>
           </div>
         </li>
       </ul>
     </div>
     <div id="bottom" class="bottom">
       <div class="address">
-        <p> 开发者 成都融信信息技术服务有限公司</p>
+        <p> 开发者 成都融信信息服务有限公司</p>
+        <p>本平台与平安银行股份有限公司消费金融中心机构签约建立深入合作，贷款资金均来自银行等金融机构。</p>
+        <p>贷款有风险，借款需谨慎:请根据个人能力合理贷款，理性消费，避免逾期。</p>
         <p>蜀ICP备2020030967号-3</p>
-        <p>公司与平安银行股份有限公司消费金融中心机构签约建立深入合作，贷款资金均来自签约合作银行方。</p>
       </div>
     </div>
   </div>

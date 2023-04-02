@@ -2,11 +2,14 @@
   <div>
     <div class="header">
       <div class="top">
-        <div class="left">
-          <van-image height="50" width="100%" position="left" fit="cover" :src="logo" class="logo" />
+        <div class="left fl">
+          <!-- <van-image height="50" width="100%" position="left" fit="cover" :src="logo" class="logo" /> -->
+          <p>锦享花</p>
         </div>
-        <div class="right">
-          <van-image height="50" width="100%" position="left" fit="cover" :src="hotline" class="hotline" />
+        <div class="right fr">
+          <!-- <van-image height="50" width="100%" position="left" fit="cover" :src="hotline" class="hotline" /> -->
+          <p>24小时客服热线</p>
+          <p>19180946181</p>
         </div>
       </div>
       <div class="nav">
@@ -259,14 +262,10 @@
 
     </div>
     <div class="tips">
-      <div>
-        开发者 成都融信信息服务有限公司
-      </div>
-      <div>蜀ICP备2020030967号-3</div>
-      <div>
-        公司与平安银行股份有限公司消费金融中心机构签约建立深入合作，贷款资金均来自签约合作银行方。
-      </div>
-
+      <p> 开发者 成都融信信息服务有限公司</p>
+      <p>本平台与平安银行股份有限公司消费金融中心机构签约建立深入合作，贷款资金均来自银行等金融机构。</p>
+      <p>贷款有风险，借款需谨慎:请根据个人能力合理贷款，理性消费，避免逾期。</p>
+      <p>蜀ICP备2020030967号-3</p>
     </div>
     <div class="footer">
       <a href="" target="_blank">在线咨询</a>
@@ -327,26 +326,45 @@ export default {
     background: #fff;
     .left {
       height: 100%;
-      width: 45%;
+      width: 100px;
       // background: #ddd;
       text-align: left;
       display: inline-block;
-      .logo {
-        height: 100%;
-        left: -40%;
-        border-radius: 5px;
+      // .logo {
+      //   height: 100%;
+      //   left: -40%;
+      //   border-radius: 5px;
+      // }
+      p {
+        // height: 60px;
+        padding: 0 10px;
+        text-align: left;
+        color: #ff6c08;
+        font-size: 24px;
+        line-height: 48px;
+        font-weight: 600;
       }
     }
     .right {
+      padding-top: 5px;
       height: 100%;
-      width: 45%;
+      width: calc(100% - 100px);
       // background: red;
       text-align: right;
       display: inline-block;
-      .hotline {
-        height: 100%;
-        left: 22%;
-        border-radius: 5px;
+      // .hotline {
+      //   height: 100%;
+      //   left: 22%;
+      //   border-radius: 5px;
+      // }
+      p {
+        // height: 60px;
+        text-align: right;
+        color: #ff6c08;
+        font-size: 14px;
+        padding: 0 10px;
+        // line-height: 26px;
+        font-weight: 600;
       }
     }
   }
@@ -677,8 +695,7 @@ export default {
   font-size: 12px;
   color: #fff;
   text-align: center;
-  line-height: 0.5rem;
-  line-height: 1.2rem;
+  line-height: 24px;
   padding: 1rem;
   margin-bottom: 2rem;
   .footer {
