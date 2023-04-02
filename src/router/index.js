@@ -7,12 +7,12 @@ const isapp =  /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IE
 const routes = [
   {
     path: '/',
-    redirect: '/home'
+    redirect: '/start'
   },
   {
     
-    path: '/home',
-    name: 'home',
+    path: '/start',
+    name: 'start',
     component: () => isapp?import('@/views/app/Start.vue'):import('@/views/pc/HomeView.vue'),
     meta: {
       type: 'pc'

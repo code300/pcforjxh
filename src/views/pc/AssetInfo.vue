@@ -259,7 +259,7 @@ export default {
 
       /***************************修改2***************************/
       delete obj.number;
-      obj.employeeNumber = this.$route.query.numberValue - 0;
+      obj.employeeNumber = this.$route.query.number - 0;
       if (obj.employeeNumber == 0) {
         delete obj.employeeNumber;
       }
