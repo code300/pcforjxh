@@ -229,7 +229,7 @@ export default {
         // domain: "apply.jinxianghua.com", //公司和专员订单8003测试员工号
         // domain: "spa.jinxianghua.com", //501推广
         //  domain: "spb.jinxianghua.com", //502推广
-        domain: this.host,
+        domain: this.hostname,
         ...this.$route.query,
         // form表单数据
         clientName: this.clientName,
