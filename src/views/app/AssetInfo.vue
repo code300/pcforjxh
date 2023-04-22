@@ -214,12 +214,7 @@ export default {
   },
   created() {
     this.host = this.getHost();
-<<<<<<< HEAD
-    this.hostname = location.hostname
-    this.getSubmitApi()
-=======
     this.getSubmitApi();
->>>>>>> 81f0ea3f8cce5d5f3a53c6fba39db4a67d230093
   },
   methods: {
     getSubmitApi() {
