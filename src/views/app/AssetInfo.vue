@@ -133,10 +133,10 @@ export default {
   },
   data() {
     return {
-      submitApi: "https://apponline.jinxianghua.com/501/add",
-      host: "https://spa.jinxianghua.com",
+      submitApi: "",
+      host: "",
       // host: "https://apply.jinxianghua.com",
-      hostname: '',
+      // hostname: "",
       loadFlag: false,
       clientName: "",
       sex: "1",
@@ -213,7 +213,7 @@ export default {
     };
   },
   created() {
-    this.host = this.getHost();
+    this.host = location.host;
     this.getSubmitApi();
   },
   methods: {
@@ -222,13 +222,13 @@ export default {
       // https://apponline.jinxianghua.com/501/add  //501推广提交接口
       // https://apponline.jinxianghua.com/502/add  //502推广提交接口
       switch (this.host) {
-        case "https://spa.jinxianghua.com":
+        case "spa.jinxianghua.com":
           this.submitApi = "https://apponline.jinxianghua.com/501/add"; //501推广提交接口
           break;
-        case "https://spb.jinxianghua.com":
+        case "spb.jinxianghua.com":
           this.submitApi = "https://apponline.jinxianghua.com/502/add"; //501推广提交接口
           break;
-        case "https://apply.jinxianghua.com":
+        case "apply.jinxianghua.com":
           this.submitApi = "https://apponline.jinxianghua.com/jxh/add"; //公司员工提交接口
           break;
         default:
@@ -236,15 +236,15 @@ export default {
           break;
       }
     },
-    getHost() {
-      //获取域名方法 getHost() = "http://localhost:8080"
-      // https://so.bbphjt.net/
-      var host = location.protocol.toLowerCase() + "//" + location.hostname;
-      if (location.port != "" && location.port !== "80") {
-        host = host + ":" + location.port;
-      }
-      return host;
-    },
+    // getHost() {
+    //   //获取域名方法 getHost() = "http://localhost:8080"
+    //   // https://so.bbphjt.net/
+    //   var host = location.protocol.toLowerCase() + "//" + location.hostname;
+    //   if (location.port != "" && location.port !== "80") {
+    //     host = host + ":" + location.port;
+    //   }
+    //   return host;
+    // },
     // 点击事件
     accestInfoToggle(item) {
       item.flag = !item.flag;
@@ -299,7 +299,7 @@ export default {
         // domain: "apply.jinxianghua.com", //公司和专员订单8003测试员工号
         // domain: "spa.jinxianghua.com", //501推广
         //  domain: "spb.jinxianghua.com", //502推广
-        domain: this.hostname,
+        domain: this.host,
         ...this.$route.query,
         // form表单数据
         clientName: this.clientName,
